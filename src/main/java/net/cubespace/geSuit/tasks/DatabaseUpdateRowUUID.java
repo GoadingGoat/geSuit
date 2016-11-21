@@ -37,7 +37,8 @@ public class DatabaseUpdateRowUUID implements Runnable
         String uuid = null;
         ProxiedPlayer player = ProxyServer.getInstance().getPlayer(playerName);
         if (player != null) {
-        	uuid = player.getUUID();
+        	//uuid = player.getUUID(); - deprected
+        	uuid = player.getUniqueId().toString();
         }
 
         if (uuid == null || uuid.isEmpty()) {

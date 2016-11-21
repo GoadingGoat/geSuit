@@ -1,12 +1,13 @@
 package net.cubespace.geSuit.configs;
 
+import net.cubespace.Yamler.Config.YamlConfig;
 import net.cubespace.geSuit.geSuit;
-import net.cubespace.Yamler.Config.Config;
+
 
 import java.io.File;
 import java.util.ArrayList;
 
-public class TeleportConfig extends Config {
+public class TeleportConfig extends YamlConfig {
     public TeleportConfig() {
         CONFIG_FILE = new File(geSuit.instance.getDataFolder(), "teleport.yml");
     }

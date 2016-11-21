@@ -4,7 +4,6 @@ import com.google.common.collect.Iterables;
 import net.cubespace.Yamler.Config.InvalidConfigurationException;
 import net.cubespace.geSuit.TimeParser;
 import net.cubespace.geSuit.Utilities;
-import net.cubespace.geSuit.database.Tracking;
 import net.cubespace.geSuit.events.BanPlayerEvent;
 import net.cubespace.geSuit.events.UnbanPlayerEvent;
 import net.cubespace.geSuit.events.WarnPlayerEvent;
@@ -516,7 +515,7 @@ public class BansManager {
                         ChatColor.GREEN + "[Tracker] IP address \"" + ip + "\" has " + uuidNameMap.size() + " accounts:");
 
                 // Copy the names into a list so that we can sort
-                List<String> sortedNames = new ArrayList();
+                List<String> sortedNames = new ArrayList<String>();
                 for (String playerName : uuidNameMap.values()) {
                     sortedNames.add(playerName);
                 }
